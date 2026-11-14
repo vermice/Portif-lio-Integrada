@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+}
+
+.navbar {
+  background: #1a1a1a;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.secao {
+  padding: 80px 0;
+}
+
+.secao-hero {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.secao-alt {
+  background: #f5f5f5;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.foto-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.foto-perfil {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: flutuar 4s ease-in-out infinite;
+}
+
+.ralsei-decor {
+  position: absolute;
+  width: 120px;
+  bottom: 20px;
+  right: 40px;
+  animation: balancar 3s ease-in-out infinite;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+  z-index: 0;
+  opacity: 0.9;
+}
+
+@keyframes flutuar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes balancar {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+
+.titulo-hero {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.subtitulo {
+  font-size: 1.4rem;
+  color: #e0e0e0;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.descricao {
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  max-width: 600px;
+}
+
+.caixa {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #667eea;
+}
+
+.caixa:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.caixa h4 {
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.lista-habilidades {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-habilidades li {
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.lista-habilidades li:last-child {
+  border-bottom: none;
+}
+
+.card-custom {
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-custom .card-title {
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+}
+
+.card-custom .card-text {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.card-projeto {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.card-projeto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-primary-custom {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  color: #fff;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.footer-custom {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 25px;
+  font-weight: 500;
+}
+
+#segredo {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#segredo:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .titulo-hero {
+    font-size: 2.2rem;
+  }
+  
+  .foto-perfil {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .ralsei-decor {
+    width: 90px;
+    bottom: 10px;
+    right: 20px;
+  }
+  
+  .titulo {
+    font-size: 2rem;
+  }
+  
+  .secao {
+    padding: 60px 0;
+  }
+}
